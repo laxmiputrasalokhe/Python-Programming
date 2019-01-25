@@ -1,8 +1,9 @@
 x=int(input())
 y=int(input())
-m=min(x,y)
-for i in range(1,m+1):
- if(x%i==0) and (y%i==0):
-  hcf=i
-z=(x*y)/hcf
-print(z)
+m=max(x,y)
+for i in range(m,x*y+1):
+ if(i%x==0) and (i%y==0):
+  lcm=i
+  break
+print(lcm)
+
